@@ -56,7 +56,6 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
         notifyItemInserted(position);
     }
 
-
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView name;
         ImageView image;

@@ -4,19 +4,57 @@
 
     <item
         android:id="@+id/home"
-        android:icon="@drawable/ic_home"
-        android:title="@string/home"/>
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
     <item
         android:id="@+id/upcoming"
-        android:icon="@drawable/upcomming"
-        android:title="@string/upcoming"/>
+        android:title="Upcoming"
+        android:icon="@drawable/video"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
     <item
         android:id="@+id/livetv"
-        android:icon="@drawable/tv"
-        android:title="Live Tv"/>
+        android:title="Live Tv"
+        android:icon="@drawable/facebook"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/sports"
+        android:title="Sports"
+        android:icon="@drawable/football"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
     <item
         android:id="@+id/kids"
         android:icon="@drawable/kids"
-        android:title="@string/kids"/>
+        android:title="Kids"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+
+<!--    <item-->
+<!--        android:id="@+id/home"-->
+<!--        android:icon="@drawable/ic_home"-->
+<!--        android:title="@string/home"/>-->
+<!--    <item-->
+<!--        android:id="@+id/upcoming"-->
+<!--        android:icon="@drawable/upcomming"-->
+<!--        android:title="@string/upcoming"/>-->
+<!--    <item-->
+<!--        android:id="@+id/livetv"-->
+<!--        android:icon="@drawable/tv"-->
+<!--        android:title="Live Tv"/>-->
+<!--    <item-->
+<!--        android:id="@+id/kids"-->
+<!--        android:icon="@drawable/kids"-->
+<!--        android:title="@string/kids"/>-->
+
+
 
 </menu>

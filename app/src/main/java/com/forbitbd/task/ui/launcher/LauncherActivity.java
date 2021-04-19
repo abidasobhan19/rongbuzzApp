@@ -15,13 +15,12 @@ import com.forbitbd.task.utils.Constant;
 
 public class LauncherActivity extends AppCompatActivity implements LauncherContract.View {
 
-
     private LauncherPresenter mPresenter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
-
 
         mPresenter = new LauncherPresenter(this);
         mPresenter.getOnlineStatus();

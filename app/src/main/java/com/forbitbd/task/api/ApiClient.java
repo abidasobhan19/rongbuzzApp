@@ -31,8 +31,11 @@ public interface ApiClient {
     @GET("/movies/featured")
     Call<List<Movie>> getFeaturedMovies();
 
+    @GET("/movies")
+    Call<List<Movie>> getMovies();
+
     @GET("/status")
     Call<OnlineStatus> getOnlineStatus();
 
-    }
+}
 
