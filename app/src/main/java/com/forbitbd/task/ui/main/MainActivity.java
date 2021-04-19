@@ -35,14 +35,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(1);
-        getWindow().setFlags(WindowManager.LayoutParams. FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-
-
-
-        getWindow().setStatusBarColor(Color.TRANSPARENT);
         setContentView(R.layout.activity_main);
-
 
         viewPager = findViewById(R.id.slideview);
         viewPager.setAdapter(new SliderAdapter(images, MainActivity.this));

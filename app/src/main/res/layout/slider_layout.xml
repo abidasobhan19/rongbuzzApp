@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="6dp">
 
     <ImageView
         android:id="@+id/slideimageview"
         android:scaleType="fitXY"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:src="@drawable/slide1"
-        android:contentDescription="@string/icon"/>
+        android:layout_height="wrap_content"
+        android:contentDescription="ic" />
 
-</LinearLayout>
+</com.google.android.material.card.MaterialCardView>

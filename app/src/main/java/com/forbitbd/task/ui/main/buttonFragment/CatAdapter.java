@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,6 +13,9 @@ import com.forbitbd.myplayer.models.Category;
 import com.forbitbd.task.R;
 
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.card.MaterialCardView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,16 +59,18 @@ public class CatAdapter extends RecyclerView.Adapter<CatAdapter.CatHolder> {
     }
 
     class CatHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        MaterialButton button;
+        MaterialCardView cardView;
+        TextView textView;
 
         public CatHolder(@NonNull View itemView) {
             super(itemView);
-            button = itemView.findViewById(R.id.button);
-            button.setOnClickListener(this);
+            cardView = itemView.findViewById(R.id.button);
+            textView = itemView.findViewById(R.id.title);
+            cardView.setOnClickListener(this);
         }
 
         public void bind(Category category){
-            button.setText(category.getName());
+            textView.setText(category.getName());
         }
 
         @Override
