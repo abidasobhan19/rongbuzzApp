@@ -23,7 +23,6 @@
         <activity
             android:name=".ui.main.MainActivity"
             android:theme="@style/AppTheme">
-
         </activity>
         <activity android:name=".ui.main.categorie.CategoryActivity" />
     </application>

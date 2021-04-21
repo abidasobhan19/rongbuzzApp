@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.forbitbd.myplayer.models.OnlineStatus;
+import com.forbitbd.task.DashboardActivity;
 import com.forbitbd.task.DialogFragment;
 import com.forbitbd.task.R;
 import com.forbitbd.task.ui.main.MainActivity;
@@ -30,7 +31,7 @@ public class LauncherActivity extends AppCompatActivity implements LauncherContr
     @Override
     public void updateStatus(OnlineStatus onlineStatus) {
         if (onlineStatus.isIs_active()){
-            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), DashboardActivity.class);
             startActivity(intent);
         }else{
             DialogFragment dialogFragment = new DialogFragment();

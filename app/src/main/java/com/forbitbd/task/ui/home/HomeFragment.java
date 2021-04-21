@@ -21,7 +21,7 @@ import java.util.TimerTask;
 public class HomeFragment extends Fragment {
 
     ViewPager viewPager;
-    int images[] = { R.drawable.war, R.drawable.movieth,R.drawable.war,R.drawable.movieth};
+    int images[] = { R.drawable.black_panther, R.drawable.bharat,R.drawable.rio_2,R.drawable.santana,R.drawable.clara};
     int currentPageCounter = 0;
 
 
