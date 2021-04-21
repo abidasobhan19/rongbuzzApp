@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import com.forbitbd.task.R;
 import com.forbitbd.task.ui.main.MainActivity;
 import com.forbitbd.task.ui.main.SliderAdapter;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -44,7 +45,8 @@ public class HomeFragment extends Fragment {
 
         viewPager = view.findViewById(R.id.slideview);
         viewPager.setAdapter(new SliderAdapter(images, getContext()));
-
+        TabLayout tabLayout = view.findViewById(R.id.tabDots);
+        tabLayout.setupWithViewPager(viewPager, true);
         final Handler handler = new Handler();
         final Runnable update = new Runnable() {
             @Override

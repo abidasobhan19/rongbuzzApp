@@ -19,6 +19,9 @@
             android:orientation="vertical"
             android:layout_margin="5dp">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/slideview"
@@ -36,6 +39,8 @@
                     app:tabGravity="center"
                     app:tabIndicatorHeight="0dp"
                     android:layout_alignBottom="@id/slideview"/>
+
+            </RelativeLayout>
 
             <fragment
                 android:id="@+id/buttonfragment"
