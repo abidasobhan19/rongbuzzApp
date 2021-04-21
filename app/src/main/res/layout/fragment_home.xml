@@ -37,7 +37,6 @@
                     app:tabIndicatorHeight="0dp"
                     android:layout_alignBottom="@id/slideview"/>
 
-
             <fragment
                 android:id="@+id/buttonfragment"
                 android:name="com.forbitbd.task.ui.main.buttonFragment.ButtonFragment"
