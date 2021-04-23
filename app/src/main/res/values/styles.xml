@@ -3,7 +3,7 @@
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="android:textViewStyle">@style/PlayFontStyle</item>
-        <item name="colorPrimary">#17C557</item>
+        <item name="colorPrimary">@color/holo_red_dark</item>
         <item name="colorPrimaryDark">#00000000</item>
         <item name="colorPrimaryVariant">@color/gray_transparent</item>
         <item name="colorOnPrimary">@color/white</item>

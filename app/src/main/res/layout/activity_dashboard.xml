@@ -21,7 +21,7 @@
                 android:layout_width="100dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/rongbuzz" />
+                android:src="@drawable/logo" />
 
         </LinearLayout>
 
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_menu"
-        app:itemTextColor="@color/holo_red_dark"
+        app:itemTextColor="#7E7D7D"
         app:labelVisibilityMode="selected"/>
 
 </RelativeLayout>
