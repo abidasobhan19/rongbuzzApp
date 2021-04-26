@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Rong Buzz</string>
+    <string name="app_name">ChayaBaazi</string>
     <string name="home">Home</string>
     <string name="upcoming">Upcoming</string>
     <string name="kids">Kids</string>
@@ -32,4 +32,6 @@
     <string name="featured_movies">Featured Movies</string>
     <string name="sorry_you_are_not_connected_to_our_network">Sorry! You Are Not Connected To Our Network.</string>
     <string name="ok">Ok</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

@@ -49,12 +49,11 @@ public class CategoryActivity extends BaseActivity implements MovieClickListener
         recyclerView = findViewById(R.id.recyclerView);
         adapter = new MovieAdapter(this, this);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3,RecyclerView.VERTICAL,false);
+        recyclerView.setLayoutManager(gridLayoutManager);
 
         setupToolBar(R.id.toolbar);
         getSupportActionBar().setTitle(category.getName());
-
-
 
         radioGroup = findViewById(R.id.radio_group);
 //        int year = new Date().getYear();

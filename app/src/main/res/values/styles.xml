@@ -1,9 +1,9 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="android:textViewStyle">@style/PlayFontStyle</item>
-        <item name="colorPrimary">#17C557</item>
+        <item name="colorPrimary">@color/holo_red_dark</item>
         <item name="colorPrimaryDark">#00000000</item>
         <item name="colorPrimaryVariant">@color/gray_transparent</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -11,6 +11,8 @@
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/gray_transparent</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
     </style>
 
     <style name="PlayFontStyle" parent="android:Widget.TextView">
@@ -70,5 +72,10 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="windowActionBarOverlay">true</item>
         <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.AppTheme.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
     </style>
 </resources>

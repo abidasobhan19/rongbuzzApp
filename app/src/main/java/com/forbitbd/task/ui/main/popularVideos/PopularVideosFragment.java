@@ -20,6 +20,7 @@ import java.util.List;
 
 
 public class PopularVideosFragment extends Fragment implements PopularVideosContract.View , ItemClickListener {
+
     RecyclerviewAdapter recyclerviewAdapter;
     RecyclerView recyclerView;
     private TextView tvTitle;
@@ -42,13 +43,10 @@ public class PopularVideosFragment extends Fragment implements PopularVideosCont
         View view = inflater.inflate(R.layout.fragment_popular_videos, container, false);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
-        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
-        recyclerView.setHasFixedSize(true);
+        recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(recyclerviewAdapter);
         tvTitle = view.findViewById(R.id.title);
-
-
         mPresenter.getPopularMovies();
 
         return view;

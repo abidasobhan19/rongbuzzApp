@@ -53,14 +53,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
         return movieList.size();
     }
 
-
     public void addMovie(Movie movie){
         if(!exist(movie)){
             movieList.add(movie);
             int position = movieList.indexOf(movie);
             notifyItemInserted(position);
         }
-
     }
 
     public void clear(){

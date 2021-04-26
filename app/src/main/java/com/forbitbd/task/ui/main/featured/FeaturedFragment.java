@@ -27,17 +27,11 @@ public class FeaturedFragment extends Fragment implements FeaturedContract.View,
     RecyclerviewAdapter recyclerviewAdapter;
     RecyclerView recyclerView;
     private TextView tvTitle;
-
     private FeaturedPresenter mPresenter;
-
-
 
     public FeaturedFragment() {
         // Required empty public constructor
     }
-
-
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,8 +54,7 @@ public class FeaturedFragment extends Fragment implements FeaturedContract.View,
 
     private void initView(View view) {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
-        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
-        recyclerView.setHasFixedSize(true);
+        recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(recyclerviewAdapter);
         tvTitle = view.findViewById(R.id.title);
