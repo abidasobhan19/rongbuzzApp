@@ -1,6 +1,5 @@
 package com.forbitbd.task.api;
 
-
 import com.forbitbd.myplayer.models.Category;
 import com.forbitbd.myplayer.models.Movie;
 import com.forbitbd.myplayer.models.OnlineStatus;
@@ -13,28 +12,25 @@ import retrofit2.http.Path;
 
 public interface ApiClient {
 
-    @GET("/categories")
+    @GET("/movizo/categories")
     Call<List<Category>> getAllCategories();
 
-    @GET("/categories/{cat_id}/movies")
+    @GET("/movizo/categories/{cat_id}/movies")
     Call<List<Movie>> getCategorizedMovies(@Path("cat_id") String catId);
 
-    @GET("/categories/{cat_id}/movies/{query}")
+    @GET("/movizo/categories/{cat_id}/movies/{query}")
     Call<List<Movie>> getCategorizedQueryMovies(@Path("cat_id") String catId, @Path("query") String query);
 
-    @GET("/categories/{cat_id}/movies/year/{year}")
+    @GET("/movizo/categories/{cat_id}/movies/year/{year}")
     Call<List<Movie>> getCategorizedYearlyMovies(@Path("cat_id") String catId, @Path("year") int year);
 
-    @GET("/movies/popular")
+    @GET("/movizo/movies/popular")
     Call<List<Movie>> getPopularMovies();
 
-    @GET("/movies/featured")
+    @GET("/movizo/movies/featured")
     Call<List<Movie>> getFeaturedMovies();
 
-    @GET("/movies")
-    Call<List<Movie>> getMovies();
-
-    @GET("/status")
+    @GET("/movizo/status")
     Call<OnlineStatus> getOnlineStatus();
 
 }

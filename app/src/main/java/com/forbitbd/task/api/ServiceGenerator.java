@@ -7,7 +7,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServiceGenerator {
-    private static final String BASE_URL = "http://103.156.125.23:3000/";
+    private static final String BASE_URL = "https://forbit.tech";
 
     private static final OkHttpClient okHttpClient = new OkHttpClient.Builder()
             .readTimeout(60, TimeUnit.SECONDS)
@@ -25,5 +25,4 @@ public class ServiceGenerator {
     public static <S> S createService(Class<S> serviceClass) {
         return retrofit.create(serviceClass);
     }
-
 }
