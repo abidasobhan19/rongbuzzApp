@@ -1,8 +1,5 @@
 package com.forbitbd.task.ui.main.featured;
 
-
-
-
 import com.forbitbd.myplayer.models.Movie;
 
 import java.util.List;

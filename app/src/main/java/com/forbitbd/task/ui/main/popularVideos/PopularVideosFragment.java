@@ -24,7 +24,6 @@ public class PopularVideosFragment extends Fragment implements PopularVideosCont
     RecyclerviewAdapter recyclerviewAdapter;
     RecyclerView recyclerView;
     private TextView tvTitle;
-
     private PopularVideosPresenter mPresenter;
 
     public PopularVideosFragment() {

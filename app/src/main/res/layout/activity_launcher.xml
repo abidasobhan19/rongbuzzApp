@@ -8,5 +8,4 @@
     tools:context=".ui.launcher.LauncherActivity"
     android:background="@color/white">
 
-
 </RelativeLayout>

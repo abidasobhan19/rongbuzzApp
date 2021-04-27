@@ -30,6 +30,9 @@ public interface ApiClient {
     @GET("/movizo/movies/featured")
     Call<List<Movie>> getFeaturedMovies();
 
+    @GET("/movizo/movies")
+    Call<List<Movie>> getAllMovies();
+
     @GET("/movizo/status")
     Call<OnlineStatus> getOnlineStatus();
 
