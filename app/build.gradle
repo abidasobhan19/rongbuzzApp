@@ -5,10 +5,10 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.forbitbd.task"
+        applicationId "com.forbitbd.chayabaji"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 4
+        versionCode 1
         versionName "1.2"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
@@ -21,7 +21,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("C:\\Users\\HP\\release\\release.jks")
+            storeFile file("C:\\Users\\HP\\release\\chayabaji.jks")
             storePassword "abid2049"
             keyAlias "key0"
             keyPassword "abid2049"

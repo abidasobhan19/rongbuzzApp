@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.forbitbd.task">
+    package="com.forbitbd.chayabaji">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,19 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DashboardActivity">
+        <activity android:name="com.forbitbd.chayabaji.DashboardActivity">
+
+        </activity>
+        <activity android:name="com.forbitbd.chayabaji.ui.launcher.LauncherActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".ui.launcher.LauncherActivity"></activity>
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name="com.forbitbd.chayabaji.ui.main.MainActivity"
             android:theme="@style/AppTheme">
         </activity>
-        <activity android:name=".ui.main.categorie.CategoryActivity" />
+        <activity android:name="com.forbitbd.chayabaji.ui.main.categorie.CategoryActivity" />
     </application>
 
 </manifest>

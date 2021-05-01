@@ -44,21 +44,21 @@
 
             <fragment
                 android:id="@+id/buttonfragment"
-                android:name="com.forbitbd.task.ui.main.buttonFragment.ButtonFragment"
+                android:name="com.forbitbd.chayabaji.ui.main.buttonFragment.ButtonFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout="@layout/fragment_button" />
 
             <fragment
                 android:id="@+id/popularVideos"
-                android:name="com.forbitbd.task.ui.main.popularVideos.PopularVideosFragment"
+                android:name="com.forbitbd.chayabaji.ui.main.popularVideos.PopularVideosFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout="@layout/fragment_popular_videos" />
 
             <fragment
                 android:id="@+id/recentlyadded"
-                android:name="com.forbitbd.task.ui.main.featured.FeaturedFragment"
+                android:name="com.forbitbd.chayabaji.ui.main.featured.FeaturedFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout="@layout/fragment_featured" />
@@ -72,7 +72,7 @@
 
             <fragment
                 android:id="@+id/allmovies"
-                android:name="com.forbitbd.task.ui.allmovie.MovieFragment"
+                android:name="com.forbitbd.chayabaji.ui.allmovie.MovieFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout="@layout/fragment_movie" />

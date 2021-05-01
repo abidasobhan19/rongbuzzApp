@@ -4,13 +4,13 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.forbitbd.task",
+  "applicationId": "com.forbitbd.chayabaji",
   "variantName": "processReleaseResources",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
-      "versionCode": 4,
+      "versionCode": 1,
       "versionName": "1.2",
       "outputFile": "app-release.apk"
     }
